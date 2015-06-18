@@ -22,7 +22,7 @@ It should be enough to import the project into Eclipse and run it as Android App
 1.0.0
 
 ### Cite us
-If you like MFP or/and you use it for your researche please cite our paper **An implementation of secure two-party computation for smartphones with application to privacy-preserving interest-cast**
+If you like MFP or/and you use it for your research please cite our paper **An implementation of secure two-party computation for smartphones with application to privacy-preserving interest-cast**
 
 ### Contacts
 * Gianpiero Costantino at gianpiero.costantino@iit.cnr.it
