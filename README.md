@@ -1,10 +1,10 @@
 # MobileFairPlay
-MobileFairPlay (MFP) is the porting of FairPlay for Android Smartphones. MobileFairplay runs Secure-Two Party Computation (STC) functions using the Fairplay framework into Android Smartphones. The current version of MFP is built to run the InterestCast primitive in which two users, e.g. Alice and Bob, want to know if they have interests in common without disclosing out their degree of interests. You can get more details from the paper:
+MobileFairPlay (MFP) is the porting of [Fairplay] for Android Smartphones. MobileFairplay runs Secure-Two Party Computation (STC) functions using the Fairplay framework into Android Smartphones. The current version of MFP is built to run the InterestCast primitive in which two users, e.g. Alice and Bob, want to know if they have interests in common without disclosing out their degree of interests. You can get more details from the paper:
 
 > Gianpiero Costantino, Fabio Martinelli, Paolo Santi, and Dario Amoruso. 2012. **An implementation of secure two-party computation for smartphones with application to privacy-preserving interest-cast**. In Proceedings of the 18th annual international conference on Mobile computing and networking (Mobicom '12). ACM, New York, NY, USA, 447-450. DOI=10.1145/2348543.2348607 http://doi.acm.org/10.1145/2348543.2348607
 
 ### Info
-This version of MFP uses the Bluetooth connection between two users to run the STC function. Compared to the original Fairplay, MFP does not use TCP sockets but bluetooth ones. To run a STC session you have to scan for neighbours and then to connect with the other smartphones that has the MFP APP installed. At the end of the function, if the thwo users have similar interests you see a bluetooth transfer files between the devices that received the connection to the device that did the connection.
+This version of MFP uses the Bluetooth connection between two users to run the STC function. Compared to the original Fairplay, MFP does not use TCP sockets but bluetooth ones. To run a STC session you have to scan for neighbours and then to connect with the other smartphones that has the MFP APP installed. At the end of the function, if the two users have similar interests you see a bluetooth transfer files between the devices that received the connection to the device that did the connection.
 
 ### Important
 MobileFairPlay creates a configuration folder into the SD with PATH:
@@ -30,7 +30,12 @@ If you like MFP or/and you use it for your researche please cite our paper **An 
 * Paolo Santi at paolo.santi@iit.cnr.it
 * Dario Amoruso
 
+**MobileFairplay** was developed at the Institute of Informatic and Telematic of the National Research Council [IIT-CNR] in Italy.
+
 License
 ----
 
 MIT
+
+[Fairplay]:http://www.cs.huji.ac.il/project/Fairplay/
+[IIT-CNR]: http://www.iit.cnr.it/en
