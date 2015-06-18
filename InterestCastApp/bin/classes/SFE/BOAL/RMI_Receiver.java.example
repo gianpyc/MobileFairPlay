@@ -1,0 +1,73 @@
+import java.io.*;
+
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+
+
+/** Receiver
+ *  @author: Dahlia Malkhi and Yaron Sella
+ */
+
+//---------------------------------------------------------------   
+
+/**
+ * This class implements the Receiver
+ *
+ * @author Dahlia Malkhi and Yaron Sella.
+ */
+public class Receiver {
+    static Sender sender = null;
+    String srvname = null;
+
+    //---------------------------------------------------------------   
+
+    /**
+     * Constructor for class Receiver
+     *
+     * @param none
+     */
+    public Receiver(String[] args) throws Exception {
+        if (args.length < 1) {
+            System.out.println("Usage: java Receiver <host-name>");
+            System.exit(1);
+        }
+
+        srvname = "//" + args[0] + "/sender";
+        sender = (Sender) Naming.lookup(srvname);
+    }
+
+    //---------------------------------------------------------------
+
+    /**
+     * A main program for testing the Sender.
+     *
+     * @param args - command line arguments.
+     */
+    public static void main(String[] args) {
+        String old_s = "null1";
+        String new_s = "null";
+
+        try {
+            Receiver receiver = new Receiver(args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        while (true) {
+            try {
+                new_s = sender.getString();
+            } catch (Exception e) {
+                //e.printStackTrace() ;
+            }
+
+            if (!old_s.equals(new_s)) {
+                System.out.println("Received: " + new_s);
+                old_s = new_s;
+
+                if (new_s.equals("end")) {
+                    System.exit(1);
+                }
+            }
+        }
+    }
+}

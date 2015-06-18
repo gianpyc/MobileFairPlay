@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableLayout android:id="@+id/widget836"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:id="@+id/widget837" android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </TableLayout>
+        <ScrollView android:id="@+id/ScrollView111"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<TextView
+    android:id="@+id/widget30"
+    android:layout_width="313px"
+    android:layout_height="50dp"
+    android:layout_x="3px"
+    android:layout_y="4px"
+    android:text="Set a value between 1 and 100 for each topic"
+    android:textSize="20sp" >
+
+</TextView>
+
+<TextView
+    android:id="@+id/widget42"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="310dp"
+    android:text="Book"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget43"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="380dp"
+    android:text="Animals"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget40"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="240dp"
+    android:text="Sport"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/widget41"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="170dp"
+    android:text="Cinema"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/widget38"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="100dp"
+    android:text="Music"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget44"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="450dp"
+    android:text="Cars"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget45"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="520dp"
+    android:text="Motorbikes"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget46"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="590dp"
+    android:text="Technology"
+    android:textSize="20sp" /><TextView
+    android:id="@+id/widget47"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="660dp"
+    android:text="Television"
+    android:textSize="20sp" />
+<TextView
+    android:id="@+id/widget48"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="4dp"
+    android:layout_y="730dp"
+    android:text="Travelling"
+    android:textSize="20sp" />
+<EditText
+    android:id="@+id/Music"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="90dp"
+    android:textSize="18sp" 
+    android:inputType="number"/>
+
+<EditText
+    android:id="@+id/Cinema"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="160dp"
+    android:textSize="18sp"
+    android:inputType="number" />
+
+<EditText
+    android:id="@+id/Sport"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="230dp"
+    android:textSize="18sp" 
+    android:inputType="number"/>
+
+<EditText
+    android:id="@+id/Book"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="300dp"
+    android:inputType="number" >
+
+   
+</EditText>
+<EditText
+    android:id="@+id/Animals"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="370dp"
+    android:inputType="number" >
+
+    
+</EditText><EditText
+    android:id="@+id/Cars"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="440dp"
+    android:inputType="number" >
+
+   
+</EditText><EditText
+    android:id="@+id/Motorbikes"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="510dp"
+    android:inputType="number" >
+
+  </EditText>
+<EditText
+    android:id="@+id/Technology"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="580dp"
+    android:inputType="number" >
+</EditText><EditText
+    android:id="@+id/Television"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="650dp"
+    android:inputType="number" >
+
+   </EditText>
+<EditText
+    android:id="@+id/Travelling"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="720dp"
+    android:inputType="number" >
+
+    <requestFocus />
+</EditText>
+<SeekBar
+    android:id="@+id/seekBar1"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:layout_x="20dp"
+    android:layout_y="850dp"
+    android:drawingCacheQuality="high"
+    android:max="10" />
+ 
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="113dp"
+    android:layout_height="wrap_content"
+    android:layout_x="10dp"
+    android:layout_y="800dp"
+    android:text="Friendship threshold" />
+
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="213dp"
+    android:layout_y="108dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </LinearLayout>
+</ScrollView>
+
+<TextView
+    android:id="@+id/sogliaAmicizia"
+    android:layout_width="38dp"
+    android:layout_height="wrap_content"
+    android:layout_x="130dp"
+    android:layout_y="800dp"
+    android:clickable="false"
+    android:text=":"
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+<Button
+    android:id="@+id/salva1"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_x="180dp"
+    android:layout_y="920dp"
+    android:text="Save" />
+
+<Button
+    android:id="@+id/quit"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_x="30dp"
+    android:layout_y="920dp"
+    android:text="Close" />
+</AbsoluteLayout>
+   </ScrollView>
+    </LinearLayout>
+    

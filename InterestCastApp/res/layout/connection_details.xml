@@ -1,0 +1,99 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:bufferType="editable"
+        android:text="Profile Pic:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	<ImageView
+	    android:id="@+id/imageUserPic"
+	    android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerHorizontal="true"
+	    android:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/textDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="smartphone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textMac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mac Address:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textDeviceMac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX:XX"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Info:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textDeviceUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textDeviceSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Surname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Past Connections:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/testo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" >
+    </TextView>
+
+     <EditText
+         android:id="@+id/editPastConnection"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_weight="0.90"
+         android:inputType="textMultiLine"
+         android:scrollbarStyle="insideOverlay"
+         android:scrollbars="vertical"
+         android:textSize="12dp" >
+     
+    </EditText>
+ 
+</LinearLayout>
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/white" />
+
+    <Button
+        android:id="@+id/salva_button"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/salva_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:text="Surname:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/surname_box"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/surname"
+        android:layout_alignBottom="@+id/surname"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surname_box"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:text="Name: "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/name_box"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/profile_img"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@+id/profile_img"
+        android:text="Select" />
+
+</RelativeLayout>

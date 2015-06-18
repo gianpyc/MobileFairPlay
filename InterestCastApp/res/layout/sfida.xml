@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<TextView
+    android:id="@+id/widget33"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:layout_x="0px"
+    android:layout_y="0px"
+    android:text="Seleziona gli interessi su cui vuoi sfidare l&apos;altro concorrente"
+    android:textSize="22px" >
+
+</TextView>
+
+<CheckBox
+    android:id="@+id/check3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="100dp"
+    android:layout_y="210dp"
+    android:text="Moto" />
+
+<CheckBox
+    android:id="@+id/check1"
+    android:layout_width="110dp"
+    android:layout_height="66dp"
+    android:layout_x="100dp"
+    android:layout_y="70dp"
+    android:text="Fumetti" />
+
+<CheckBox
+    android:id="@+id/check2"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_x="100dp"
+    android:layout_y="140dp"
+    android:text="Auto" />
+
+<CheckBox
+    android:id="@+id/check4"
+    android:layout_width="102dp"
+    android:layout_height="wrap_content"
+    android:layout_x="100dp"
+    android:layout_y="280dp"
+    android:text="Calcio" />
+
+<Button
+    android:id="@+id/ok"
+    android:layout_width="116dp"
+    android:layout_height="wrap_content"
+    android:layout_x="78dp"
+    android:layout_y="356dp"
+    android:text="OK" />
+
+</AbsoluteLayout>

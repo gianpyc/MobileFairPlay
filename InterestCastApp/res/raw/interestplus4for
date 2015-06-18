@@ -1,0 +1,57 @@
+/*
+ * It checks if two users have the same interest for four topics
+ */
+program Interest {
+    const int = 4; // Number of interactions
+      
+    type Key = Int<4>; // 4-bit integer for the counter
+    type int = Int<8>; // 8-bit integer
+	type AliceInput = int[4]; // alice has 4 inputs
+	type BobInput = int[5];   // bob has 5 input, one more is for the threshold
+	type AliceOutput = Boolean[4]; // array for the outputs 
+	type BobOutput = Boolean[4]; // array for the outputs
+	type Output = struct {AliceOutput alice,
+            BobOutput bob};
+	type Input = struct {AliceInput alice,
+            BobInput bob};
+	
+	/*
+	 *
+	 *@param1: input.bob[4] is the threshold
+	 *@param2: input.bob[0-3] are the interests of Bob
+	 *@param3: input.alice[0-3] are the interests of Alice
+	 *
+	 * The function discovers whether |i-j|<lambda with four interactions of both participants
+	*/
+	function Output output(Input input) 
+	{
+       var int tmp;
+       var int soglia;          
+       var Key i;
+            
+        soglia = input.bob[4]; // It gets the threshold
+        
+        //The topic comparison is made four times    
+		for (i = 0 to int-1)
+		{         
+            tmp = (input.bob[i] - input.alice[i]); // Difference between Bob input and Alice input
+            
+            if (tmp < 0) // If the difference is negative it changes in positive
+            {
+            	tmp = ~tmp;
+            	tmp = tmp + 1; //  It is needed otherwise the check does not work in one situation
+            }
+            if (tmp <= soglia) // if the difference is lower than the threshold, then the output is positive
+            {
+            	output.alice[i] = 1;
+            	output.bob[i] = 1;
+            }
+            else  				// otherwise the output is negative
+             	{
+            		output.alice[i] = 0;
+            		output.bob[i] = 0;
+             	}
+		}
+                   
+	}
+}

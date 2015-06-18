@@ -1,0 +1,23 @@
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+
+/** Sender (interface only)
+ *  @author: Dahlia Malkhi and Yaron Sella
+ */
+
+//---------------------------------------------------------------   
+
+/**
+ * This file contains only the interface, the implementation is
+ * @author Dahlia Malkhi and Yaron Sella.
+ */
+public interface Sender extends Remote {
+    /**
+     * The getString() method
+     *
+     * @return string sent by the Sender.
+     * @exception - RemoteException (for rmi)
+     */
+    String getString() throws RemoteException;
+}

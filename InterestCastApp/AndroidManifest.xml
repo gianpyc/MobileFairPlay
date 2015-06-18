@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.android"
+      android:versionCode="1"
+      android:versionName="1.0">
+ <uses-sdk android:targetSdkVersion="10" android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ 
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/app_icon" >
+                <activity android:name=".BluetoothChat.FairplayMobileApp"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BluetoothChat.BluetoothChat"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:name=".BluetoothChat.Interessi"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity android:name=".tab.TabBarManger"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+             </activity>
+                <activity android:name=".tab.About_us"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+             </activity>
+             <activity android:name=".BluetoothChat.ClassSupport"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            
+        </activity>
+	<activity android:name=".tab.TabInteressi" android:screenOrientation="portrait"/>
+	<activity android:name=".tab.TabSfida" />
+	<activity android:name=".tab.tab" />
+    <activity android:name=".BluetoothChat.connectionDetailsActivity" android:screenOrientation="portrait"/>   
+    <activity android:name="com.android.profile.ProfileActivity" android:screenOrientation="portrait"/>  
+   
+	<activity
+       
+         android:name="com.android.profile.LoadIMGAsink"
+        android:launchMode="standard"
+        android:label="loadsdasink"/>
+    
+        <activity android:name=".BluetoothChat.Sfida"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden">
+            
+        </activity>
+            <activity android:name=".bob.BobActivity"
+                   android:label="@string/app_name">
+            
+        </activity>
+         <activity android:name=".BluetoothChat.ShowDialog"
+                   android:label="@string/app_name">
+            
+        </activity>
+              <activity android:name=".alice.AliceActivity"
+                   android:label="@string/app_name">
+          
+        </activity>
+        <activity android:name=".BluetoothChat.DeviceListActivity"
+                  android:label="@string/select_device"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden" />
+        
+              <receiver android:name=".broadcast.PairingRequest" >
+            <intent-filter >
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
+	

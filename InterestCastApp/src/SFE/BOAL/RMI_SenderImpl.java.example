@@ -1,0 +1,90 @@
+import java.io.*;
+
+import java.rmi.Naming;
+import java.rmi.RMISecurityManager;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+
+/** SenderImpl
+ *  @author: Dahlia Malkhi and Yaron Sella
+ */
+
+//---------------------------------------------------------------   
+
+/**
+ * SenderImpl implements the interface class Sender
+ *
+ * @author Dahlia Malkhi and Yaron Sella.
+ */
+public class SenderImpl extends UnicastRemoteObject implements Sender {
+    private static String message = "Start";
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(
+                System.in));
+
+    //---------------------------------------------------------------   
+
+    /**
+     * Constructor
+     */
+    public SenderImpl() throws RemoteException {
+        super();
+    }
+
+    //---------------------------------------------------------------
+
+    /**
+     * getString()
+     *
+     * @return string sent by the Sender.
+     */
+    public String getString() {
+        return message;
+    }
+
+    //---------------------------------------------------------------
+
+    /**
+     * setString()
+     *
+     */
+    public static void setString() {
+        try {
+            System.out.print("Enter new string => ");
+            System.out.flush();
+            message = br.readLine();
+
+            if (message.equals("end")) {
+                System.exit(1);
+            }
+        } catch (Exception e) {
+            System.out.println("SenderImpl err: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    //---------------------------------------------------------------
+
+    /**
+     * main
+     *
+     */
+    public static void main(String[] args) {
+        // Create and install a security manager
+        if (System.getSecurityManager() == null) {
+            System.setSecurityManager(new RMISecurityManager());
+        }
+
+        try {
+            SenderImpl s = new SenderImpl();
+
+            // Bind this object instance to the name "sender"
+            Naming.rebind("//localhost/sender", s);
+            System.out.println("Server bound in registry");
+            s.setString();
+        } catch (Exception e) {
+            System.out.println("SenderImpl err: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}

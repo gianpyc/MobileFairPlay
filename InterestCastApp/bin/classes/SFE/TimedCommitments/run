@@ -1,0 +1,2 @@
+cd ../..
+${JAVA_HOME}/bin/java -ea SFE.TimedCommitments.Main $*

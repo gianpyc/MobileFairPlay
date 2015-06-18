@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:clickable="false">
+
+<TextView
+    android:id="@+id/widget31"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="0dp"
+    android:layout_y="10dp"
+    android:text="Welcome to MobileFairplay App"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="160dp"
+    android:layout_y="408dp" />
+
+<Button
+    android:id="@+id/chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_x="-4dp"
+    android:layout_y="100dp"
+    android:clickable="true"
+    android:text="Run" />
+
+<Button
+    android:id="@+id/config"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_x="-2dp"
+    android:layout_y="190dp"
+    android:text="Preferences" />
+
+<Button
+    android:id="@+id/userProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_x="-2dp"
+    android:layout_y="260dp"
+    android:text="User Profile" />
+
+<Button
+    android:id="@+id/aboutus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_x="-2dp"
+    android:layout_y="350dp"
+    android:text="About us" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="37dp"
+    android:layout_height="32dp"
+    android:layout_x="104dp"
+    android:layout_y="420dp"
+    android:src="@drawable/cnr" />
+
+<ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="67dp"
+    android:layout_height="32dp"
+    android:layout_x="161dp"
+    android:layout_y="420dp"
+    android:src="@drawable/iit" />
+
+<TextView
+    android:id="@+id/textViewVersion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="128dp"
+    android:layout_y="459dp"
+    android:text="Version 1.00"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="14dp" />
+
+</AbsoluteLayout>
